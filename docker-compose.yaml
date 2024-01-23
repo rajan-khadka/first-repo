@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  app:
+    image: first-image
+    container_name: first-node
+    build:
+      context: .
+      dockerfile: ./dockerfile
+      target: development
